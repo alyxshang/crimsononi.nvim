@@ -37,7 +37,7 @@ local function setEditorTheme()
 		"ModeMsg", 
 		{ 
 			fg = colors.derivatives.base2, 
-			bg = colors.derivatives.base3 
+			bg = colors.derivatives.base1
 		}
 	)
   	hl(
@@ -45,7 +45,7 @@ local function setEditorTheme()
 		"MsgSeparator", 
 		{ 
 			fg = colors.derivatives.base2, 
-			bg = colors.derivatives.base3 
+			bg = colors.derivatives.base1 
 		}
 	)
   	hl(
@@ -228,7 +228,7 @@ local function setEditorTheme()
 		0,
 		"WarningMsg",
 		{
-			fg = colors.fixed.red, 
+			fg = colors.derivatives.base2, 
 			bg = colors.derivatives.base1
 		}
 	)
@@ -393,7 +393,7 @@ local function setEditorTheme()
 		0,
 		"ErrorMsg",
 		{
-			fg = colors.fixed.red,
+			fg = colors.derivatives.base2,
 			bg = colors.derivatives.base1,
 			bold=true, 
 		}
@@ -484,37 +484,174 @@ end
 -- A function to set the theme
 -- for the "status" bar provided
 -- by the "lualine" plugin.
-local function setLuaLineTheme()
+local function getLuaLineTheme()
 	return {
 		normal = {
-		  a = {bg = colors.gray, fg = colors.black, gui = 'bold'},
-		  b = {bg = colors.lightgray, fg = colors.white},
-		  c = {bg = colors.darkgray, fg = colors.gray}
+			a = {
+				bg = colors.derivatives.base2,
+				fg = colors.derivatives.base1,
+				gui = 'bold'
+			},
+			b = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			c = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			x = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			y = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			z = {
+				bg = colors.derivatives.base2,
+				fg = colors.derivatives.base1,
+			},
 		},
 		insert = {
-		  a = {bg = colors.blue, fg = colors.black, gui = 'bold'},
-		  b = {bg = colors.lightgray, fg = colors.white},
-		  c = {bg = colors.lightgray, fg = colors.white}
+			a = {
+				bg = colors.derivatives.base3,
+				fg = colors.derivatives.base1,
+				gui = 'bold'
+			},
+			b = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			c = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			x = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			y = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			z = {
+				bg = colors.derivatives.base3,
+				fg = colors.derivatives.base1,
+				gui = 'bold'
+			},
 		},
 		visual = {
-		  a = {bg = colors.yellow, fg = colors.black, gui = 'bold'},
-		  b = {bg = colors.lightgray, fg = colors.white},
-		  c = {bg = colors.inactivegray, fg = colors.black}
+			a = {
+				bg = colors.derivatives.base5,
+				fg = colors.derivatives.base1,
+				gui = 'bold'
+			},
+			b = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			c = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			x = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			y = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			z = {
+				bg = colors.derivatives.base5,
+				fg = colors.derivatives.base1,
+				gui = 'bold'
+			},
 		},
 		replace = {
-		  a = {bg = colors.red, fg = colors.black, gui = 'bold'},
-		  b = {bg = colors.lightgray, fg = colors.white},
-		  c = {bg = colors.black, fg = colors.white}
+			a = {
+				bg = colors.derivatives.base6,
+				fg = colors.derivatives.base1,
+				gui = 'bold'
+			},
+			b = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			c = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			x = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			y = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			z = {
+				bg = colors.derivatives.base6,
+				fg = colors.derivatives.base1,
+				gui = 'bold'
+			},
 		},
 		command = {
-		  a = {bg = colors.green, fg = colors.black, gui = 'bold'},
-		  b = {bg = colors.lightgray, fg = colors.white},
-		  c = {bg = colors.inactivegray, fg = colors.black}
+			a = {
+				bg = colors.derivatives.base4,
+				fg = colors.derivatives.base1,
+				gui = 'bold'
+			},
+			b = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			c = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			x = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			y = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			z = {
+				bg = colors.derivatives.base4,
+				fg = colors.derivatives.base1,
+				gui = 'bold'
+			},
 		},
 		inactive = {
-		  a = {bg = colors.darkgray, fg = colors.gray, gui = 'bold'},
-		  b = {bg = colors.darkgray, fg = colors.gray},
-		  c = {bg = colors.darkgray, fg = colors.gray}
+			a = {
+				bg = colors.derivatives.base8,
+				fg = colors.derivatives.base2,
+				gui = 'bold'
+			},
+			b = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			c = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			x = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			y = {
+				bg = colors.derivatives.base1,
+				fg = colors.derivatives.base2,
+			},
+			z = {
+				bg = colors.derivatives.base8,
+				fg = colors.derivatives.base2,
+				gui = 'bold'
+			},
 		}
 	}
 end
@@ -531,7 +668,6 @@ end
 -- component.
 local function runTheme()
 	setEditorTheme()
-	setLuaLineTheme()
 	setTelescopeTheme()
 end
 
