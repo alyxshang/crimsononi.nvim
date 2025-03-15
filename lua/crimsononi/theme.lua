@@ -585,6 +585,12 @@ end
 local function setTelescopeTheme()
 end
 
+-- A function to set the theme for
+-- the "NeovimTree" plugin that 
+-- traverse projects.
+local function setNvimTreeTheme()
+end
+
 -- A function that calls on
 -- every function to set the
 -- theme for the corresponding

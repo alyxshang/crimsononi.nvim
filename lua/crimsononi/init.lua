@@ -11,8 +11,17 @@ local M = {}
 -- function for
 -- setting things
 -- up.
-function M.setup()
+function M.setup(config)
     theme.runTheme()
+    if config["transparent"] = nil then
+        print("Transparency off.")
+    else
+        if type(config["transparent"]) = boolean then
+            -- set transaprent.
+        else
+            print("Parameter supplied but of wrong type.")
+        end
+    end
 end
 
 -- Exporting the
