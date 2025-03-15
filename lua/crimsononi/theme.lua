@@ -499,19 +499,7 @@ local function getLuaLineTheme()
 			c = {
 				bg = colors.derivatives.base1,
 				fg = colors.derivatives.base2,
-			},
-			x = {
-				bg = colors.derivatives.base1,
-				fg = colors.derivatives.base2,
-			},
-			y = {
-				bg = colors.derivatives.base1,
-				fg = colors.derivatives.base2,
-			},
-			z = {
-				bg = colors.derivatives.base2,
-				fg = colors.derivatives.base1,
-			},
+			}
 		},
 		insert = {
 			a = {
@@ -526,20 +514,7 @@ local function getLuaLineTheme()
 			c = {
 				bg = colors.derivatives.base1,
 				fg = colors.derivatives.base2,
-			},
-			x = {
-				bg = colors.derivatives.base1,
-				fg = colors.derivatives.base2,
-			},
-			y = {
-				bg = colors.derivatives.base1,
-				fg = colors.derivatives.base2,
-			},
-			z = {
-				bg = colors.derivatives.base3,
-				fg = colors.derivatives.base1,
-				gui = 'bold'
-			},
+			}
 		},
 		visual = {
 			a = {
@@ -554,20 +529,7 @@ local function getLuaLineTheme()
 			c = {
 				bg = colors.derivatives.base1,
 				fg = colors.derivatives.base2,
-			},
-			x = {
-				bg = colors.derivatives.base1,
-				fg = colors.derivatives.base2,
-			},
-			y = {
-				bg = colors.derivatives.base1,
-				fg = colors.derivatives.base2,
-			},
-			z = {
-				bg = colors.derivatives.base5,
-				fg = colors.derivatives.base1,
-				gui = 'bold'
-			},
+			}
 		},
 		replace = {
 			a = {
@@ -582,19 +544,6 @@ local function getLuaLineTheme()
 			c = {
 				bg = colors.derivatives.base1,
 				fg = colors.derivatives.base2,
-			},
-			x = {
-				bg = colors.derivatives.base1,
-				fg = colors.derivatives.base2,
-			},
-			y = {
-				bg = colors.derivatives.base1,
-				fg = colors.derivatives.base2,
-			},
-			z = {
-				bg = colors.derivatives.base6,
-				fg = colors.derivatives.base1,
-				gui = 'bold'
 			},
 		},
 		command = {
@@ -611,23 +560,10 @@ local function getLuaLineTheme()
 				bg = colors.derivatives.base1,
 				fg = colors.derivatives.base2,
 			},
-			x = {
-				bg = colors.derivatives.base1,
-				fg = colors.derivatives.base2,
-			},
-			y = {
-				bg = colors.derivatives.base1,
-				fg = colors.derivatives.base2,
-			},
-			z = {
-				bg = colors.derivatives.base4,
-				fg = colors.derivatives.base1,
-				gui = 'bold'
-			},
 		},
 		inactive = {
 			a = {
-				bg = colors.derivatives.base8,
+				bg = colors.derivatives.base1,
 				fg = colors.derivatives.base2,
 				gui = 'bold'
 			},
@@ -638,19 +574,6 @@ local function getLuaLineTheme()
 			c = {
 				bg = colors.derivatives.base1,
 				fg = colors.derivatives.base2,
-			},
-			x = {
-				bg = colors.derivatives.base1,
-				fg = colors.derivatives.base2,
-			},
-			y = {
-				bg = colors.derivatives.base1,
-				fg = colors.derivatives.base2,
-			},
-			z = {
-				bg = colors.derivatives.base8,
-				fg = colors.derivatives.base2,
-				gui = 'bold'
 			},
 		}
 	}
